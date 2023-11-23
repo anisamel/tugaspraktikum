@@ -29,18 +29,18 @@
         {{item.nama}}
         <p>{{item.jurusan}}</p>
       </ion-label>
-      <ion-button color="danger" slot="end" (click)="hapusMahasiswa(item.id)">
+      <ion-button color="danger" slot="end" (click)="hapusMahasiswa(item.id)" shape="round">
         <ion-icon name="trash"></ion-icon>
         Hapus
       </ion-button>
-      <ion-button expand="block" (click)="open_modal_edit(true,item.id)">
+      <ion-button expand="block" (click)="open_modal_edit(true,item.id)" shape="round">
         <ion-icon name="create"></ion-icon>
         Edit
       </ion-button>
     </ion-item>
   </ion-card>
   <ion-card>
-    <ion-button (click)="open_modal_tambah(true)" expand="block">
+    <ion-button (click)="open_modal_tambah(true)" expand="block" shape="round">
       <ion-icon name="add"></ion-icon>
       Tambah Mahasiswa
     </ion-button>
@@ -52,7 +52,7 @@
       <ion-header>
         <ion-toolbar>
           <ion-buttons slot="start">
-            <ion-button color="danger" (click)="cancel()">Batal</ion-button>
+            <ion-button color="danger" (click)="cancel()" expand="block" shape="round">Batal</ion-button>
           </ion-buttons>
           <ion-title>Tambah Mahasiswa</ion-title>
         </ion-toolbar>
@@ -89,6 +89,7 @@
               color="primary"
               shape="full"
               expand="block"
+              shape="round"
             >
             <ion-icon name="add"></ion-icon>
             Tambah Mahasiswa
@@ -106,7 +107,7 @@
       <ion-header>
         <ion-toolbar>
           <ion-buttons slot="start">
-            <ion-button color="danger" (click)="cancel()">Batal</ion-button>
+            <ion-button color="danger" (click)="cancel()" expand="block" shape="round">Batal</ion-button>
           </ion-buttons>
           <ion-title>Edit Mahasiswa</ion-title>
         </ion-toolbar>
@@ -143,6 +144,7 @@
               color="primary"
               shape="full"
               expand="block"
+              shape="round"
               >
               <ion-icon name="add"></ion-icon>
               Edit Mahasiswa
